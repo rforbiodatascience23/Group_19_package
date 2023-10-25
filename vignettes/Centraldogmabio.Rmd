@@ -1,0 +1,9 @@
+---
+title: "Centraldogmabio"
+output: rmarkdown::pdf_vignette
+vignette: >
+  %\VignetteIndexEntry{Centraldogmabio}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
