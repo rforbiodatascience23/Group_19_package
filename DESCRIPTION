@@ -24,3 +24,6 @@ Description: The package helps manipulating DNA/RNA sequences by performing basi
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.2.3
