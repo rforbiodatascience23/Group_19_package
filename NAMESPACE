@@ -3,6 +3,7 @@
 export(aa_proportions)
 export(codon_to_aa)
 export(dna_to_rna)
+export(generate_codon)
 export(generate_rand_DNA)
 importFrom(ggplot2,aes)
 importFrom(ggplot2,geom_col)
