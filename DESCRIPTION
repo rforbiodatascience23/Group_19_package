@@ -1,0 +1,26 @@
+Package: Centraldogmabio
+Type: Package
+Title: Central Dogma Biology 
+Version: 0.1.0
+Author: c(person(given = "Eva",
+           family = "Frossard",
+           role = c("aut", "cre"), # There must be a "cre", but there can only be one
+           email = "s231701@student.dtu.dk"), 
+    person(given = "Pauline",
+           family = "Charpentier",
+           role = "aut",
+           email = "s231663@student.dtu.dk")), 
+    person(given = "Noy",
+           family = "Tabur",
+           role = "aut",
+           email = "s232743@student.dtu.dk")), 
+    person(given = "Fabian",
+           family = "Ziegler",
+           role = "aut",
+           email = "s231932@student.dtu.dk"))
+Maintainer: The package maintainer <yourself@somewhere.net>
+Description: The package helps manipulating DNA/RNA sequences by performing basic 
+    manipulation like creation of a randomized sequence, transformation from DNA to RNA...
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
