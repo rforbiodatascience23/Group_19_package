@@ -1,30 +1,11 @@
----
-title: "Centraldogmabio"
-output: rmarkdown::pdf_document
-vignette: >
-  %\VignetteIndexEntry{Centraldogmabio}
-  %\VignetteEncoding{UTF-8}
-  %\VignetteEngine{knitr::rmarkdown}
-editor_options: 
-  markdown: 
-    wrap: 72
----
 
-```{r, include = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>"
-)
-```
+<!-- README.md is generated from README.Rmd. Please edit that file -->
 
-```{r setup}
+# Centraldogmabio
+
+``` r
 library(Centraldogmabio)
 ```
-
-# Link to the Github repository
-
-https://github.com/rforbiodatascience23/group_19_package
-
 
 # Introduction
 
@@ -38,58 +19,64 @@ individually and in conjunction with others.
 
 ## Function 1: Generate Random DNA Sequence
 
-*'generate_rand_DNA'*
+*‘generate_rand_DNA’*
 
 Random Sequence Generation: The fourth function generates a random DNA
 sequence of a desired length.
 
-```{r}
+``` r
 generate_rand_DNA(3)
+#> [1] "CAC"
 ```
 
 ## Function 2: DNA to RNA Conversion
 
-*'dna_to_rna'*
+*‘dna_to_rna’*
 
 Transcription: The second function transforms a DNA sequence into an RNA
-sequence by replacing 'T' with 'U'.
+sequence by replacing ‘T’ with ‘U’.
 
-```{r}
+``` r
 dna_to_rna("A C G T")
+#> [1] "A C G U"
 ```
 
 ## Function 3: Generate Codons from a Genome
 
-*'generate_codon'*
+*‘generate_codon’*
 
 Sequence manipulation: The third function generates codons from a given
 sequence, with an optional starting position.
 
-```{r}
+``` r
 generate_codon("GTCGTC")
+#> [1] "GTC" "GTC"
 ```
 
 ## Function 4: Codon to Amino Acid Conversion
 
-*'codon_to_aa'*
+*‘codon_to_aa’*
 
 Translation: The first function converts a codon (sequence of 3
 nucleotides) to its corresponding amino acid.
 
-```{r}
+``` r
 codon_to_aa("AUG")
+#> [1] "M"
 ```
 
 ## Function 5:Amino Acid Proportion Plot
 
-*'aa_proportions'*
+*‘aa_proportions’*
 
 Visualization: The fifth function creates a bar chart displaying the
 proportions of amino acids in a given sequence.
 
-```{r}
+``` r
 aa_proportions("MVAAA")
 ```
+
+<img src="man/figures/README-unnamed-chunk-7-1.svg" width="100%" />
 
 # Use Cases
 
@@ -110,8 +97,8 @@ In order to add the dependencies of the fifth function, we used the
 following command line: `usethis::use_package("package_name")` This
 command line was used for the packages `stringr` and `ggplot2`.
 
-Having too many dependencies could result in dependency conflicts and high 
-memory usage. It also makes the code harder to maintain.
+Having too many dependencies could result in dependency conflicts and
+high memory usage. It also makes the code harder to maintain.
 
-If many functions have the same name, using `package::function`instead of
-`@importFrom package function` eliminates the ambiguity.
+If many functions have the same name, using `package::function`instead
+of `@importFrom package function` eliminates the ambiguity.
