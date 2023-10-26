@@ -71,5 +71,5 @@ The package can be used in bioinformatics task, such as DNA to protein translati
 
 1. Reverse Transcription: Convert RNA back into DNA.
 2. Multiple Sequence Alignment: Function for comparing and aligning multople DNA, RNA or protein sequences.
-3. Protein Properties: Calculate properties, such as molecular weight, secondary structure prediction, etc.
+3. Protein Properties: Calculate properties, such as molecular weight, secondary structure prediction, etc..
 
