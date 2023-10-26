@@ -1,0 +1,75 @@
+---
+title: "Centraldogmabio"
+output: rmarkdown::pdf_document
+vignette: >
+  %\VignetteIndexEntry{Centraldogmabio}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Centraldogmabio)
+```
+
+# Introduction
+
+The Centraldogmabio package is a tool for molecular biology and bioinformatics.
+It provides a set of of functions with DNA, RNA and amino acid sequences. 
+This is the user guide for the package functionalities.
+It will also demonstrate how each function can be used individually and in conjunction with others.
+
+
+# Functions Overview
+
+## Function 1: Codon to Amino Acid Conversion
+*'codon_to_aa'*
+
+The first function converts a codon (sequence of 3 nucleotides) to its corresponding amino acid.
+
+## Function 2: DNA to RNA Conversion
+*'dna_to_rna'*
+
+The second function transforms a DNA sequence into and RNA sequence by replacing 'T' with 'U'.
+
+## Function 3: Generate Codons from a Genome
+*'generate_codon'*
+
+The third function generates codons from a given genom sequence, with an optional starting position.
+
+## Function 4: Generate Random DNA Sequence
+*'generate_rand_DNA'*
+
+The fourth function generates a random DNA sequence of a desired length.
+
+## Function 5:Amino Acid Proportion Plot
+*'aa_proportions'*
+
+The fifth function creates a bar chart displaying the proportions of amino acids in a given sequence.
+
+
+# Use Cases
+
+The package can be used in bioinformatics task, such as DNA to protein translation, codon anaysis and sequence visualization.
+
+## Examples
+
+1. Translation Analysis: By converting codons into amino acids protein sequences can be analysed.
+2. Sequence Manipulation: Transform DNA to RnA for RNA related analyses.
+3. Genomic Analysis: Generating codons for further analysis.
+4. Random Sequence Generation: Random DNA sequences for testing of algorithms or for simulation.
+5. Visualization: Visualizing the distribution of amino acids in a protein sequence.
+
+
+# Future Enhancements (other function)
+
+1. Reverse Transcription: Convert RNA back into DNA.
+2. Multiple Sequence Alignment: Function for comparing and aligning multople DNA, RNA or protein sequences.
+3. Protein Properties: Calculate properties, such as molecular weight, secondary structure prediction, etc.
+
